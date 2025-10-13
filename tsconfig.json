@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // --- 核心基础选项 ---
+    "target": "ESNext",
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "lib": ["ESNext", "DOM"],
+
+    // --- 路径别名配置 ---
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "resolveJsonModule": true,
+    "strict": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  // 告诉 TypeScript 需要检查哪些文件，更精确，效率更高
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts", "uno.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,59 @@
+# .github/workflows/main.yml
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [master] # ✅ 已修正: 将 main 改为 master
+  pull_request:
+    branches: [master] # ✅ 已修正: 将 main 改为 master
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "Lint"
+  Lint:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9
+      - name: Install modules
+        run: pnpm install
+      - name: Run Lint
+        run: pnpm run lint
+
+  # ✅ 已修正: 修正了缩进，使其与 Lint 平级
+  UnitTest:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9
+      - name: Install modules
+        run: pnpm install
+      - name: Run Test
+        run: pnpm run test # ✅ 已修正: 移除了多余的 "run"
+
+  # ✅ 已修正: 修正了缩进，使其与 Lint, UnitTest 平级
+  PreBuild:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9
+      - name: Install modules
+        run: pnpm install
+      - name: Run Build # ✅ 已优化: 将名字从 "Run Lint" 改为 "Run Build"
+        run: pnpm run build
