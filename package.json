@@ -1,10 +1,10 @@
 {
-  "name": "ssy-ui-vite",
+  "name": "@qwerty3514/ssy-ui-vite",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [],
   "main": "index.js",
   "files": ["dist"],
@@ -50,5 +50,9 @@
   },
   "cz-customizable": {
     "config": ".cz-config.cjs"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
