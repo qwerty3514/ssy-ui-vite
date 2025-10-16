@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar Component Demo (Dev Mode)</title>
+  </head>
+
+  <body>
+    <h2>按需引入: Avatar 组件</h2>
+    <div id="app"></div>
+
+    <script type="module">
+      import { createApp } from 'vue'
+      import Avatar from '/src/avatar/index.ts'
+      import 'uno.css'
+
+      console.log('SSYUI:Avatar', Avatar)
+
+      createApp({
+        template: `
+    <h3>不同形状和尺寸:</h3>
+    <div style="margin-bottom:20px; display: flex; align-items: center; gap: 20px;">
+        <!-- ✨ 关键：移除了所有 src 属性 ✨ -->
+        <SAvatar shape="circle" size="small">SM</SAvatar>
+        <SAvatar shape="circle" size="medium">MD</SAvatar>
+        <SAvatar shape="circle" size="large">LG</SAvatar>
+    </div>
+    <div style="margin-bottom:20px; display: flex; align-items: center; gap: 20px;">
+        <SAvatar shape="square" size="small">SM</SAvatar>
+        <SAvatar shape="square" size="medium">MD</SAvatar>
+        <SAvatar shape="square" size="large">LG</SAvatar>
+    </div>
+ `,
+      })
+        .use(Avatar)
+        .mount('#app')
+    </script>
+  </body>
+</html>
