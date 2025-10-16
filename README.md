@@ -7,7 +7,7 @@
   基于 Vite 栈的前端工程化实践
 </p>
 <p align="center">
-![GitHub License](https://img.shields.io/github/license/qwerty3514/ssy-ui-vite)
+  <img src="https://img.shields.io/github/license/qwerty3514/ssy-ui-vite" alt="GitHub License">
 </p>
 
 ## Features
