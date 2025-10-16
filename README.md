@@ -13,7 +13,7 @@
   基于 Vite 栈的前端工程化实践
 </p>
 <p align="center">
-![GitHub License](https://img.shields.io/github/license/qwerty3514/ssy-ui-vite?color=red)
+![GitHub License](https://img.shields.io/github/license/qwerty3514/ssy-ui-vite)
 </p>
 
 ## Features
@@ -50,4 +50,4 @@ createApp(App)
 
 ## Quick Start
 
-如果希望尽快上手，可以访问[Getting Started]（https://ssy-ui-vite.vercel.app/)
+如果希望尽快上手，可以访问[Getting Started](https://ssy-ui-vite.vercel.app/)
