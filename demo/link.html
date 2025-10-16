@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>按需引入 (Dev Mode)</title>
+  </head>
+
+  <body>
+    <h2>按需引入:超链接组件</h2>
+    <div id="app"></div>
+
+    <!-- 我们不再需要任何 link 和 script 标签来引入外部文件 -->
+
+    <script type="module">
+      // ✨ 关键 1: 使用裸模块导入，Vite 会自动处理
+      import { createApp } from 'vue'
+
+      // ✨ 关键 2: 直接从 /src 源码目录导入组件，这是 dev 模式的核心
+      import Link from '/src/link/index.ts'
+
+      // ✨ 关键 3: 导入 UnoCSS 的虚拟模块来获取样式
+      import 'uno.css'
+
+      console.log('SSYUI:Link from source', Link)
+
+      createApp({
+        template: `
+        <div style="margin-bottom:20px;">
+            <s-link size="small"></s-link>
+            <SLink size="medium" color="green">中号链接</SLink>
+            <SLink size="large" color="blue">大号链接</SLink>
+        </div>
+     `,
+      })
+        .use(Link)
+        .mount('#app')
+    </script>
+  </body>
+</html>

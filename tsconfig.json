@@ -14,6 +14,7 @@
       "@/*": ["src/*"]
     },
     "resolveJsonModule": true,
+    "types": ["vite/client"],
     "strict": true,
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
@@ -21,6 +22,12 @@
     "skipLibCheck": true
   },
   // 告诉 TypeScript 需要检查哪些文件，更精确，效率更高
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts", "uno.config.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/vite-env.d.ts"
+  ],
   "exclude": ["node_modules", "dist"]
 }
