@@ -49,4 +49,5 @@ createApp(App)
 ```
 
 ## Quick Start
+
 如果希望尽快上手，可以访问[Getting Started]（https://ssy-ui-vite.vercel.app/)
