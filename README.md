@@ -8,6 +8,7 @@
 </p>
 <p align="center">
   <img src="https://img.shields.io/github/license/qwerty3514/ssy-ui-vite" alt="GitHub License">
+  [![codecov](https://codecov.io/github/qwerty3514/ssy-ui-vite/graph/badge.svg?token=X4EV3HMS1K)](https://codecov.io/github/qwerty3514/ssy-ui-vite)
 </p>
 
 ## Features
