@@ -7,8 +7,8 @@
   基于 Vite 栈的前端工程化实践
 </p>
 <p align="center">
-  <img src="https://img.shields.io/github/license/qwerty3514/ssy-ui-vite" alt="GitHub License">
-  [![codecov](https://codecov.io/github/qwerty3514/ssy-ui-vite/graph/badge.svg?token=X4EV3HMS1K)](https://codecov.io/github/qwerty3514/ssy-ui-vite)
+<a href="https://github.com/qwerty3514/ssy-ui-vite/blob/master/LICENSE"><img src="https://img.shields.io/github/license/qwerty3514/ssy-ui-vite" alt="GitHub License"></a>
+  <a href="https://codecov.io/github/qwerty3514/ssy-ui-vite"><img src="https://codecov.io/github/qwerty3514/ssy-ui-vite/graph/badge.svg?token=X4EV3HMS1K"/></a>
 </p>
 
 ## Features
